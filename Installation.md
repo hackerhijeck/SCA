@@ -1,6 +1,6 @@
 ## Sonatype Nexus3 Installation
 
-### Steps of Installation:
+### Steps of Installation Sonatype:
 ```
 $ apt update
 
@@ -36,4 +36,8 @@ $ firewall-cmd --reload
 $ cat /app/sonatype-work/nexus3/admin.password
 
 ## Setup a new password
+```
+
+### Steps of Installation Sonatype IQ Server:
+```
 ```
