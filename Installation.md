@@ -33,7 +33,7 @@ $ firewall-cmd --add-port=8081/tcp --permanent
 $ firewall-cmd --reload
 
 ## For password:
-$ cat
+$ cat /app/sonatype-work/nexus3/admin.password
 
 ## Setup a new password
 ```
