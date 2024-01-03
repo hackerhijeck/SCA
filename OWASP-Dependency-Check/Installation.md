@@ -18,10 +18,10 @@ $ ./dependency-check.sh --nvdApiKey <apiKey> --scan dependency-check-9.0.7-relea
 $ ./dependency-check.sh --help
 
 --project     <Project-name>       Choose any project name (eg. Dep-Check)
--s/--scan     <Path>	             The path to scan - this option can be specified multiple times. (e.g. 'path/**/*.jar')
--f        	  <Format>             Report format (HTML, XML, CSV, JSON, JUNIT, SARIF, JENKINS, GITLAB)
+-s/--scan     <Path>	           The path to scan - this option can be specified multiple times. (e.g. 'path/**/*.jar')
+-f            <Format>             Report format (HTML, XML, CSV, JSON, JUNIT, SARIF, JENKINS, GITLAB)
 -o/--out      <Output>             Output file name (For HTML=output.html, For XML=output.xml etc)
--v 	          <Version>            OWASP Dependency Version details.
+-v 	      <Version>            OWASP Dependency Version details.
 
 $ ./dependency-check.sh --project <project-name> --scan /path/file.jar --out output.html
 $ ./dependency-check.sh --project <project-name> --scan /path/file.zip --out output.html
