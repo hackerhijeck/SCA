@@ -68,10 +68,16 @@ $ systemctl restart postgresql
 ## Run
 $ ./demo.sh
 
+## Port:
+http://localhost:8070
+
 ## Default credentials
 admin
 admin123
 
 ## For trial license:
 https://my.sonatype.com/profile/licenses
+
+## Install license key:
+install the license key
 ```
