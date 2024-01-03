@@ -40,4 +40,38 @@ $ cat /app/sonatype-work/nexus3/admin.password
 
 ### Steps of Installation Sonatype IQ Server:
 ```
+$ mkdir /opt/nexus-iq-server
+$ cd /opt/nexus-iq-server
+$ wget https://download.sonatype.com/clm/server/latest.zip
+$ unzip latest.zip
+$ chown -Rv {username} /opt/nexus-iq-server
+$ nano config.yml
+ database:
+  type: postgresql
+  hostname: localhost
+  port: 5432
+  name: iqserver
+  username: admin
+  password: admin
+## For SQL Database:
+$ apt install postgresql
+$ systemctl start postgresql
+$ sudo -u postgres psql
+$ CREATE DATABASE iqserver;
+$ CREATE USER admin WITH PASSWORD 'admin';
+$ GRANT ALL PRIVILEGES ON DATABASE iqserver TO admin;
+$ \q
+$ nano /etc/postgresql/<version>/main/pg_hba.conf
+  host    iqserver     admin     127.0.0.1/32    md5
+$ systemctl restart postgresql
+
+## Run
+$ ./demo.sh
+
+## Default credentials
+admin
+admin123
+
+## For trial license:
+https://my.sonatype.com/profile/licenses
 ```
